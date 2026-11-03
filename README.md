@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AI-Powered Language Translation Tool 
 
 A web-based language translator built using Python, Flask, and Google's Gemini API. This application allows users to translate text between multiple languages using AI-powered translation.
@@ -192,8 +192,8 @@ language-translator/
 └── README.md
 ```
 
-## 👩‍💻 Author
+##  Author
 
-**Fathimath Jumana**
+Fathimath Jumana
 
->>>>>>> 25e2684487cd3da3f2c515fed455f872ae858449
+
