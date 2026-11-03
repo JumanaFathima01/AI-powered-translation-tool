@@ -1,0 +1,203 @@
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5fb;
+    color: #252943;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 34px;
+    color: #5146c8;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #777b91;
+}
+
+/* Main translator box */
+.translator-box {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Language dropdown section */
+.language-selection {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.language-group {
+    flex: 1;
+}
+
+.language-group label,
+.text-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Dropdown styling */
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9dbea;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Swap button */
+#swap-button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #eeeaff;
+    color: #5146c8;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#swap-button:hover {
+    background: #ded9ff;
+}
+
+/* Input and output areas */
+.text-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    border: 1px solid #d9dbea;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    outline: none;
+}
+
+textarea:focus,
+select:focus {
+    border-color: #7165e8;
+}
+
+textarea::placeholder {
+    color: #a3a5b5;
+}
+
+#translated-text {
+    background: #f9f9ff;
+}
+
+/* Copy button */
+#copy-button {
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #eeeaff;
+    color: #5146c8;
+    cursor: pointer;
+}
+
+/* Translate button */
+#translate-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: #5146c8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#translate-button:hover {
+    background: #4035ad;
+}
+
+/* Message section */
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #888ba0;
+    font-size: 13px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 650px) {
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .translator-box {
+        padding: 18px;
+    }
+
+    .language-selection {
+        gap: 10px;
+    }
+
+    .text-areas {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
